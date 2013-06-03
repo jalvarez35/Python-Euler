@@ -1,6 +1,13 @@
 import unittest
 
-class Multiplos(unittest.TestCase):
+def es_divisible_entre_tres_o_cinco(x):
+    if  x%3 ==0 or x%5 == 0:
+        return True
+    else:
+        return False
+
+class Multiplos_Tres_O_Cinco(unittest.TestCase):
+
     def test_prueba_que_uno_no_deberia_ser_divisible_entre_tres_o_cinco(self):
         self.assertEqual(es_divisible_entre_tres_o_cinco(1), False)
        
@@ -62,7 +69,7 @@ class Multiplos(unittest.TestCase):
         self.assertEqual(es_divisible_entre_tres_o_cinco(20), True)
 
     def test_prueba_que_veintiuno_no_deberia_ser_divisible_entre_tres_o_cinco(self):
-        self.assertEqual(es_divisible_entre_tres_o_cinco(21), False)
+        self.assertEqual(es_divisible_entre_tres_o_cinco(21), True)
 
     def test_prueba_que_veintidos_no_deberia_ser_divisible_entre_tres_o_cinco(self):
         self.assertEqual(es_divisible_entre_tres_o_cinco(22), False)
@@ -74,7 +81,7 @@ class Multiplos(unittest.TestCase):
         self.assertEqual(es_divisible_entre_tres_o_cinco(24), True)
 
     def test_prueba_que_veinticinco_no_deberia_ser_divisible_entre_tres_o_cinco(self):
-        self.assertEqual(es_divisible_entre_tres_o_cinco(25), False)
+        self.assertEqual(es_divisible_entre_tres_o_cinco(25), True)
 
     def test_prueba_que_veintiseis_no_deberia_ser_divisible_entre_tres_o_cinco(self):
         self.assertEqual(es_divisible_entre_tres_o_cinco(26), False)
@@ -83,7 +90,7 @@ class Multiplos(unittest.TestCase):
         self.assertEqual(es_divisible_entre_tres_o_cinco(27), True)
 
     def test_prueba_que_veintiocho_deberia_ser_divisible_entre_tres_o_cinco(self):
-        self.assertEqual(es_divisible_entre_tres_o_cinco(28), True)
+        self.assertEqual(es_divisible_entre_tres_o_cinco(28), False)
 
     def test_prueba_que_veintinueve_no_deberia_ser_divisible_entre_tres_o_cinco(self):
         self.assertEqual(es_divisible_entre_tres_o_cinco(29), False)
