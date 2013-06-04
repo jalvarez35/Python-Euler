@@ -1,10 +1,7 @@
 import unittest
 
 def es_divisible_entre_tres_o_cinco(x):
-    if  x%3 ==0 or x%5 == 0:
-        return True
-    else:
-        return False
+    return x%3 ==0 or x%5 == 0
 
 class Multiplos_Tres_O_Cinco(unittest.TestCase):
 
