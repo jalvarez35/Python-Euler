@@ -3,6 +3,11 @@ import unittest
 def es_divisible_entre_tres_o_cinco(x):
     return x%3 ==0 or x%5 == 0
 
+suma = 0
+for i in range(1,1000):
+    if es_divisible_entre_tres_o_cinco(i):
+        suma = suma + i       
+
 class Multiplos_Tres_O_Cinco(unittest.TestCase):
 
     def test_prueba_que_uno_no_deberia_ser_divisible_entre_tres_o_cinco(self):
