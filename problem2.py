@@ -1,5 +1,10 @@
 import unittest
 
+def fibo(x):
+    if x == 1 or x==2:
+        return x
+    return fibo(x-1) + fibo(x-2)
+
 class FibonacciTest(unittest.TestCase):
     def test_prueba_que_el_fibonacci_de_1_es_1(self):
         """
@@ -35,7 +40,7 @@ class FibonacciTest(unittest.TestCase):
         """
         Prueba que el fibonacci de 6 sea 13.
         """
-        self.assertEqual(fibo(6), 3)
+        self.assertEqual(fibo(6), 13)
 
     def test_prueba_que_el_fibonacci_de_7_es_21(self):
         """
@@ -63,9 +68,9 @@ class FibonacciTest(unittest.TestCase):
     
     def test_prueba_que_el_fibonacci_de_16_deberia_ser_1597(self):
         """
-        Prueba que el fibonacci de 10 es 1597
+        Prueba que el fibonacci de 16 es 1597
         """
-        self.assertEqual(fibo(10), 1597)
+        self.assertEqual(fibo(16), 1597)
 
 if __name__ == '__main__':
     unittest.main()
