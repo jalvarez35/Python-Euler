@@ -1,19 +1,18 @@
 import unittest
 
-class Problema3Test(unittest.TestCase):
+def es_primo(x):
+    for i in range(2, x):
+        if x%i==0:
+            return False
+    return True
 
-    def test_2_que_el_dos_deberia_ser_primo(self):
-        """
-        Prueba que el 2 deberia ser primo
-        """
-        self.assertEqual(es_primo(2), True)
+class PrimoTest(unittest.TestCase):
 
-    def test_prueba_que_el_3_deberia_ser_primo(self):
+    def test_prueba_que_el_2_deberia_ser_primo(self):
         """
         Prueba que el 3 deberia ser primo
         """
-        self.assertEqual(es_primo(3), True)
-
+        self.assertEqual(es_primo(2), True)
 
     def test_prueba_que_el_4_no_deberia_ser_primo(self):
         """
