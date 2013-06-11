@@ -73,4 +73,5 @@ class FibonacciTest(unittest.TestCase):
         self.assertEqual(fibo(16), 1597)
 
 if __name__ == '__main__':
-    unittest.main()
+#    unittest.main()
+     print fibo(4000)

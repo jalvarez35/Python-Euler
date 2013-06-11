@@ -1,7 +1,9 @@
 import unittest
 
-def es_palindromo(x):
-    pass
+def es_palindrome(x):
+    if str(x) == str(x)[::-1]:
+        return True
+    return False
 
 class NumeroPalindromeTest(unittest.TestCase):
     def test_prueba_que_111_deberia_ser_palindrome(self):
@@ -62,7 +64,7 @@ class NumeroPalindromeTest(unittest.TestCase):
         self.assertEqual(es_palindrome(345543), True)
     
     def test_prueba_que_106938_deberia_ser_palindrome(self):
-        self.assertEqual(es_palindrome(106938), True)
+        self.assertEqual(es_palindrome(106938), False)
     
     def test_prueba_que_906609_deberia_ser_palindrome(self):
         self.assertEqual(es_palindrome(906609), True)

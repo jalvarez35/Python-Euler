@@ -114,4 +114,5 @@ class SumaFactoresTresOCinco(unittest.TestCase):
         self.assertEqual(sumar_multiplos_de_tres_o_cinco_hasta(1000), 233168)
 
 if __name__ == '__main__':
-    unittest.main()
+#    unittest.main()
+    print sumar_multiplos_de_tres_o_cinco_hasta(1000)
