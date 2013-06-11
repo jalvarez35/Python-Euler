@@ -58,9 +58,6 @@ class NumeroPalindromeTest(unittest.TestCase):
     def test_prueba_que_250000_no_deberia_ser_palindrome(self):
         self.assertEqual(es_palindrome(250000), False)
     
-    def test_prueba_que_106938_no_deberia_ser_palindrome(self):
-        self.assertEqual(es_palindrome(106938), False)
-
     def test_prueba_que_345543_deberia_ser_palindrome(self):
         self.assertEqual(es_palindrome(345543), True)
     
@@ -81,6 +78,63 @@ class NumeroPalindromeTest(unittest.TestCase):
     
     def test_prueba_que_514415_deberia_ser_palindrome(self):
         self.assertEqual(es_palindrome(514415), True)
+    
+    def test_prueba_que_5225_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(5225), True)
+    
+    def test_prueba_que_8008_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(8008), True)
+    
+    def test_prueba_que_8448_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(8448), True)
+    
+    def test_prueba_que_7887_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(7887), True)
+    
+    def test_prueba_que_8338_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(8338), True)
+    
+    def test_prueba_que_8668_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(8668), True)
+    
+    def test_prueba_que_8574_no_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(8574), False)
+    
+    def test_prueba_que_1234_no_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(1234), False)
+    
+    def test_prueba_que_4389_no_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(4389), False)
+    
+    def test_prueba_que_9301_no_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(9301), False)
+    
+    def test_prueba_que_1992_no_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(1992), False)
+
+    def test_prueba_que_67276_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(67276), True)
+    
+    def test_prueba_que_28982_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(28982), True)
+    
+    def test_prueba_que_87678_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(87678), True)
+    
+    def test_prueba_que_11611_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(11611), True)
+
+    def test_prueba_que_14285_no_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(14285), False)
+
+    def test_prueba_que_15125_no_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(15125), False)
+    
+    def test_prueba_que_75824_no_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(75824), False)
+    
+    def test_prueba_que_85673_no_deberia_ser_palindrome(self):
+        self.assertEqual(es_palindrome(85673), False)
 
 if __name__ == '__main__':
     unittest.main()
